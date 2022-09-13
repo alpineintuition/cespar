@@ -10,3 +10,4 @@
 - `lib/` : Includes the `deap` framework for parallelisation mechanism.
 - `logs/` : Once the optimizations are launched, their results are stored in a new `cmaes_spinal_x` folder.
 - `models/` : Various Osim models (arms, legs, trunk etc.) as well as `.obj` files for the exoskeleton part.
+- `Results_CMAES/logbook_analysis.py` : This short script allows to classify the generations' results of an optimization, based on the duration (how long was the model able to walk) and then, on the value of the reward. From this, the best checkpoints can be selected for further analysis. 

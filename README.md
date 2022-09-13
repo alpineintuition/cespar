@@ -40,8 +40,7 @@ locomotion (stability constraints, energy efficiency as well as biped dynamics d
 degrees of freedom) and the lack of a clear understanding of how spinal networks are modulated
 to adapt to different environmental or internal conditions.
 
-In this pipeline, the various parameters of a reflex model ([1](https://ieeexplore.ieee.org/document/5445011), a bio-
-inspired controller based on muscle-reflexes only) can be optimized alongside an assistive-robotic device to
+In this pipeline, the various parameters of a reflex model ([1](https://ieeexplore.ieee.org/document/5445011), *A Muscle-Reflex Model That Encodes Principles of Legged Mechanics Produces Human Walking Dynamics and Muscle Activities*) can be optimized alongside an assistive-robotic device to
 study neurorehabilitation of patients with lower limb motor control disorders.
 
 ![Alt Text](../main/md_files/output.gif)

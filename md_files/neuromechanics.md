@@ -61,9 +61,9 @@ One of the characteristics that is modified is that the model used and the contr
 
 ![alt text](../../main/md_files/images/musculo.png "Used musculoskeletal model. The muscles HAB and HAD, corresponding to the hip abductor and hip adductor, are removed from Song's 3D model.")
 
-```
+
 Thus, now 9 muscles are considered for each leg (GAS, BFSH, GLU, HAM, HFL, RF, SOL, VAS, TA). The model also consists of 7 segments (thigh, shank and foot), as well as the trunk representing the upper body. 3 internal DOFs are considered here: one for the hip corresponding to the flexion, one for the knee and one for the ankle. Therefore, 6 internal DOFs compose the musculoskeletal model used in this project. Furthermore, the 4 contact points that constitute each foot are kept in this model.
-```
+
 
 The used model can be characterized by a state vector of size **85** composed of:
 - the muscle states (length, velocity, force: 2 x 3 x 9 = 54 parameters for both legs)
@@ -77,55 +77,19 @@ In short, the 3 segments of this model are connected with joints and the motion 
 ### Summary
 
 The muscles involved in each model are presented in the table below:
-```{list-table}
-:header-rows: 1
 
-* -
-  - 2D Model (Geyer)
-  - 3D Model (Song)
-  - Our 2D Model
-* - BFSH
-  - [ ]
-  - [x]
-  - [x]
-* - GAS
-  - [x]
-  - [x]
-  - [x]
-* - GLU
-  - [x]
-  - [x]
-  - [x]
-* - HAM
-  - [x]
-  - [x]
-  - [x]
-* - HFL
-  - [x]
-  - [x]
-  - [x]
-* - RF
-  - [ ]
-  - [x]
-  - [x]
-* - SOL
-  - [x]
-  - [x]
-  - [x]
-* - TA
-  - [x]
-  - [x]
-  - [x]
-* - VAS
-  - [x]
-  - [x]
-  - [x]
-* - HAB
-  - [ ]
-  - [x]
-  - [ ]
-* - HAD
-  - [ ]
-  - [x]
-  - [ ]
-```
+|       Muscles           |2D Geyer Model | 3D Song Model | Our CESPAR 2D Model |
+|:-----------------------:|:-------------:|:-------------:|:-------------------:|
+|BFSH                     |               | x             | x                   |
+|GAS                      |x              | x             | x                   |
+|GLU                      |x              | x             | x                   |
+|HAM                      |x              | x             | x                   |
+|HFL                      |x              | x             | x                   |
+|RF                       |               | x             | x                   |
+|SOL                      |x              | x             | x                   |
+|TA                       |x              | x             | x                   |
+|VAS                      |x              | x             | x                   |
+|HAB                      |               | x             |                     |
+|HAD                      |               | x             |                     |
+
+

@@ -2,6 +2,31 @@
 
 **This section covers the detail of the OPENSIM implementation. I recommend using Opensim 3.3's synthax when you need to read and or change .osim files as I found it to be the easiest way to apprehend and the rest of the guide uses the 3.3's notation.
 Notepad++ is a great software for reading .osim files. Whenever there is a reference to <Section_name>, look into the .osim file**
+
+## Overview
+An Opensim model .osim file is structured like an XML file. Several components constitute the physical system of the Opensim model such as bodies, joints, forces, markers, constraints, contact geometry, and controllers.
+
+### Bodies
+Bodies are the elemental parts of the model. They are the rigid components, that when linked together form the model. They can be either skeletal parts or exoskeleton parts and you can find them in the \<Bodyset\> section of the .osim file.
+	
+### Joints
+Joints link the bodies together. They define how one child body moves with respect to its parent body. You can find them in the \<Jointset\> section within a <Body> section of \<Bodyset\> in the .osim file.
+	
+### Forces
+Forces define how the model is actuated. They are described in the \<Forceset\> section. In our case, the main forces used are the contact forces (between the feet and the ground), the muscles of the skeleton, limitations forces (preventing hyperextension or hyperflexion of the joints) and finally, the actuators of the exoskeleton.
+	
+### Markers
+Markers are helpful to pin positions in the model and link the exoskeleton bodies together for example. They can be found in the \<Markerset\> section.
+
+### Constraints
+Constraints are useful to link two bodies that can't be linked with a regular joint. For example, the exoskeleton shin and the musculoskeletal shin.
+They can be found in the \<Constraintset\> section.
+	
+### Contact Geometry
+Contact Geometries can be planes, cubes, spheres or whatever shape represented in a geometry file. They define the surface contact of a body. They are coupled together with contact forces defined between two bodies. They are in the \<ContactGeometrySet\> section.
+	
+### Controllers
+	
 ## Adding Exoskeleton model to the musculoskeletal model
 1. Open the .osim file of the musculoskeleton on which you want to add your exoskeleton
 2. Go right before the end of the <objects> section in the <Bodyset> section
@@ -72,17 +97,17 @@ of the constraints in the .osim files.
 
 First, let's introduce some of the standards:
 
-- ’A’ is for body parts of the musculoskeleton
-- ’B’ is for body parts of the exoskeleton
+- ’M’ is for body parts of the musculoskeleton
+- ’E’ is for body parts of the exoskeleton
 
-A line axis, let’s call it AxisA is fixed on Body A. The line (in
-cyan in the picture below) goes through the anchor point A on Body A and the direction of the line is
-defined by the user. Anchor Point B, highlighted by red arrows in pictures, (in our case it is the
-same as anchor point A but expressed in the reference frame of Body B) on Body B is constrained
-to stay on AxisA. Anchor Point B can move along the line of Body A, so its
-position in Body A can change (not always) but not its position in body B. Therefore, whenever
-Body A is moving, Anchor Point B has to follow it along the LocalAxisA and since it has to
-remain at the exact same location in Body B, Body B will move to follow Anchor Point B. The
+A line axis, let’s call it AxisM is fixed on Body M. The line (in
+cyan in the picture below) goes through the anchor point M on Body M and the direction of the line is
+defined by the user. Anchor Point E, highlighted by red arrows in pictures, (in our case it is the
+same as anchor point M but expressed in the reference frame of Body E) on Body E is constrained
+to stay on AxisM. Anchor Point E can move along the line of Body M, so its
+position in Body M can change (not always) but not its position in body E. Therefore, whenever
+Body M is moving, Anchor Point E has to follow it along the LocalAxisM and since it has to
+remain at the exact same location in Body E, Body E will move to follow Anchor Point E. The
 cyan lines go through the 2 centers of joints of a body part for the femur and tibia. For the foot,
 the line is a bit below the ankle joint center and is parallel to the surface of the exofoot, so that
 if the toes move, they slide on the exofoot. In dark blue are the rotation axes of the exoskeleton
