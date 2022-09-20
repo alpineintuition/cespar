@@ -4,6 +4,8 @@ __license__ = "GPL-3.0 license"
 __version__ = "1.0.0"
 __email__ = "berat.denizdurduran@alpineintuition.ch"
 __status__ = "Stable"
+__acknowledgement__ = "The CESPAR Project is supported by European Union’s Horizon 2020 Framework Programme for Research and Innovation under Specific Grant Agreement No: 945539 (Human Brain Project SGA-3)"
+
 
 import numpy as np
 import os
