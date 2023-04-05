@@ -15,9 +15,9 @@ robotic assistive device environments in order to study simulated neurorohabilit
 1. [Installation](../main/md_files/Installation.md)
 2. [How to Launch and Test an Optimization](../main/md_files/howToLaunch.md)
 3. [Explanation of the Files](../main/md_files/files.md)
-3. [Neuromechanical models of Human Locomotion](../main/md_files/neuromechanics.md)
-3. [Explanation of Opensim Integration](../main/md_files/opensim.md)
-
+4. [Neuromechanical models of Human Locomotion](../main/md_files/neuromechanics.md)
+5. [Explanation of Opensim Integration](../main/md_files/opensim.md)
+6. [Model Generator](../main/md_files/model_generator.md)
 
 ### General Information
 

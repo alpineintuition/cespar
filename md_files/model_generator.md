@@ -19,6 +19,6 @@ configuration but this could change with other exos.
 - The y coordinate (y_factor) corresponds to the length of the bone in the case of the femurs and the tibias
 - The x coordinate (x_factor) corresponds to the length of the bones in the case of the feet
 - When scaling the feet, only the x coordinate (x_factor) is taken into account for both the skeleton and the exoskeleton
-- For the moment, scaling the head, the torso and the pelvis do not change anything in the new created model
+- For the moment, scaling the head does not change anything in the new created model
 - The new initial position of the pelvis' height needs to be fine tuned i.e. it is normal if the new model is a bit
  too high above or too low below the ground
