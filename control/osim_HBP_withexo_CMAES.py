@@ -1,6 +1,6 @@
 __author__ = "Berat Denizdurduran, Florin Dzeladini, Carla Nannini, Raphael Gaiffe"
 __copyright__ = "Copyright 2022, Alpine Intuition SARL"
-__license__ = "GPL-3.0 license"
+__license__ = "Apache-2.0 license"
 __version__ = "1.0.0"
 __email__ = "berat.denizdurduran@alpineintuition.ch"
 __status__ = "Stable"
@@ -11,7 +11,7 @@ from osim.env.utils.mygym import convert_to_gym
 import gym
 import opensim
 from sklearn.metrics import mean_squared_error
-
+import __main__
 reward_energy = 0
 reward_velocity = 0
 
@@ -477,8 +477,15 @@ class L2M2019Env(OsimEnv):
         if difficulty not in [0, 1, 2, 3]:
             raise ValueError("difficulty level should be in [0, 1, 2, 3].")
         self.model_paths = {}
-        self.model_paths['2D'] = os.path.join(os.path.dirname(__file__), '../models/gait14dof22musc_withexo_full.osim')
-        self.model_paths['3D'] = os.path.join(os.path.dirname(__file__), '../models/gait14dof22musc_withexo_full.osim')
+
+        if __main__.__file__ == "model_generator.py":
+            self.model_paths['2D'] = os.path.join(os.path.dirname(__file__), '../models/gait14dof22musc_withexo_new.osim')
+            self.model_paths['3D'] = os.path.join(os.path.dirname(__file__), '../models/gait14dof22musc_withexo_new.osim')
+
+        else:
+            self.model_paths['2D'] = os.path.join(os.path.dirname(__file__), '../models/gait14dof22musc_withexo_full.osim')
+            self.model_paths['3D'] = os.path.join(os.path.dirname(__file__), '../models/gait14dof22musc_withexo_full.osim')
+
         self.model_path = self.model_paths[self.get_model_key()]
         super(L2M2019Env, self).__init__(visualize=visualize, integrator_accuracy=integrator_accuracy)
 
