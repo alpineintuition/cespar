@@ -1,7 +1,15 @@
+__author__ = "Florin Dzeladini"
+__copyright__ = "Copyright 2023, Alpine Intuition SARL"
+__license__ = "Apache-2.0 license"
+__version__ = "1.0.0"
+__email__ = "berat.denizdurduran@alpineintuition.ch"
+__status__ = "Stable"
+
 import sys
 from deap import creator, base, tools, algorithms ,cma
 from mpi4py import MPI
 import time
+import pickle
 import numpy as np
 comm = MPI.COMM_WORLD
 NP = comm.Get_size() # new: gives number of ranks in comm

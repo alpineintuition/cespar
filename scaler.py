@@ -11,7 +11,7 @@
 
 __author__ = "Aliaa Diab"
 __copyright__ = "Copyright 2023, Alpine Intuition SARL"
-__license__ = "GPL-3.0 license"
+__license__ = "Apache-2.0 license"
 __version__ = "1.0.0"
 __email__ = "berat.denizdurduran@alpineintuition.ch"
 __status__ = "Stable"
