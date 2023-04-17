@@ -1,0 +1,400 @@
+[2023-02-16 17:36:00.822] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:36:00.838] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:36:00.840] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:36:00.840] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:36:01.196] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:36:01.210] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:36:01.211] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:36:01.211] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:37:14.812] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:37:14.825] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:37:14.826] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:37:14.827] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:37:15.111] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:37:15.125] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:37:15.126] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:37:15.126] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:37:47.359] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:37:47.373] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:37:47.374] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:37:47.374] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:37:47.659] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:37:47.674] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:37:47.675] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:37:47.675] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:38:37.449] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:38:37.464] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:38:37.465] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:38:37.465] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:38:37.754] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:38:37.769] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:38:37.770] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:38:37.771] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:39:30.953] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:39:30.968] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:39:30.969] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:39:30.969] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:39:31.253] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:39:31.267] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:39:31.268] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:39:31.268] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:51:42.989] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:51:43.004] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:51:43.006] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:51:43.006] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:51:43.315] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:51:43.328] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:51:43.329] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:51:43.329] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:52:19.407] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:52:19.421] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:52:19.422] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:52:19.422] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:52:19.705] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:52:19.720] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:52:19.721] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:52:19.721] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:53:41.211] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:53:41.224] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:53:41.225] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:53:41.225] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:53:41.516] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:53:41.530] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:53:41.531] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:53:41.531] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:54:25.797] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:54:25.810] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:54:25.811] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:54:25.812] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:54:26.125] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:54:26.139] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:54:26.139] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:54:26.140] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:01.200] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:01.214] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:01.216] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:01.216] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:01.537] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:01.551] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:01.552] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:01.553] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:26.955] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:26.969] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:26.971] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:26.972] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:27.260] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:27.274] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:27.275] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:27.275] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:45.788] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:45.803] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:45.804] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:45.804] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:46.098] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:46.121] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:46.122] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:46.123] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:59.578] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:59.593] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:59.594] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:59.594] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:56:59.888] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:56:59.901] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:56:59.902] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:56:59.902] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:57:35.659] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:57:35.673] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:57:35.675] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:57:35.675] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:57:35.965] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:57:35.978] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:57:35.979] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:57:35.979] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:58:09.401] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:58:09.415] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:58:09.416] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:58:09.416] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:58:09.712] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:58:09.725] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:58:09.726] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:58:09.726] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:58:36.858] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:58:36.875] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:58:36.876] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:58:36.876] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:58:37.156] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:58:37.169] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:58:37.170] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:58:37.170] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:59:05.539] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:59:05.553] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:59:05.554] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:59:05.554] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-16 17:59:05.854] [info] Updating Model file from 30000 to latest format...
+[2023-02-16 17:59:05.868] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-16 17:59:05.868] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-16 17:59:05.869] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:56:27.128] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:56:27.145] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:56:27.147] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:56:27.147] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:56:27.477] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:56:27.492] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:56:27.493] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:56:27.493] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:57:40.516] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:57:40.530] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:57:40.532] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:57:40.532] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:57:40.815] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:57:40.829] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:57:40.830] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:57:40.830] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:58:13.584] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:58:13.598] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:58:13.600] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:58:13.600] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:58:13.889] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:58:13.902] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:58:13.903] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:58:13.903] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:58:57.684] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:58:57.697] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:58:57.698] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:58:57.699] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 08:58:57.996] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 08:58:58.010] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 08:58:58.011] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 08:58:58.011] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:25:11.844] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:25:11.855] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:25:11.856] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:25:11.856] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:25:12.157] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:25:12.165] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:25:12.166] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:25:12.166] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:26:58.761] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:26:58.776] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:26:58.777] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:26:58.778] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:26:59.068] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:26:59.083] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:26:59.084] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:26:59.084] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:28:18.952] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:28:18.966] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:28:18.967] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:28:18.968] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:28:19.270] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:28:19.283] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:28:19.284] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:28:19.285] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:29:06.790] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:29:06.803] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:29:06.804] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:29:06.805] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:29:07.107] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:29:07.121] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:29:07.122] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:29:07.122] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:29:33.139] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:29:33.153] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:29:33.154] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:29:33.154] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:29:33.467] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:29:33.480] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:29:33.481] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:29:33.481] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:32:06.982] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:32:06.996] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:32:06.998] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:32:06.998] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:32:07.313] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:32:07.327] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:32:07.328] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:32:07.328] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:32:42.676] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:32:42.690] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:32:42.691] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:32:42.691] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:32:42.990] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:32:43.004] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:32:43.005] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:32:43.005] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:33:01.088] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:33:01.102] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:33:01.103] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:33:01.104] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 09:33:01.403] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 09:33:01.416] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 09:33:01.417] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 09:33:01.417] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 12:18:12.308] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 12:18:12.322] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 12:18:12.323] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 12:18:12.323] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 12:18:12.643] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 12:18:12.656] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 12:18:12.657] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 12:18:12.657] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 12:20:02.484] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 12:20:02.499] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 12:20:02.500] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 12:20:02.500] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 12:20:02.792] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 12:20:02.807] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 12:20:02.808] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 12:20:02.808] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 15:25:36.054] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 15:25:36.069] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 15:25:36.070] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 15:25:36.070] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 15:25:36.398] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 15:25:36.411] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 15:25:36.412] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 15:25:36.412] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 15:27:27.335] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 15:27:27.348] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 15:27:27.349] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 15:27:27.350] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-17 15:27:27.672] [info] Updating Model file from 30000 to latest format...
+[2023-02-17 15:27:27.685] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-17 15:27:27.686] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-17 15:27:27.686] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-22 16:27:06.794] [info] Updating Model file from 30000 to latest format...
+[2023-02-22 16:27:06.811] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-22 16:27:06.813] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-22 16:27:06.813] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-22 16:27:07.165] [info] Updating Model file from 30000 to latest format...
+[2023-02-22 16:27:07.178] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-22 16:27:07.179] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-22 16:27:07.179] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-22 16:28:07.826] [info] Updating Model file from 30000 to latest format...
+[2023-02-22 16:28:07.840] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-22 16:28:07.841] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-22 16:28:07.841] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-22 16:28:08.132] [info] Updating Model file from 30000 to latest format...
+[2023-02-22 16:28:08.145] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-22 16:28:08.146] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-22 16:28:08.146] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-22 16:29:46.213] [info] Updating Model file from 30000 to latest format...
+[2023-02-22 16:29:46.227] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-22 16:29:46.228] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-22 16:29:46.228] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-22 16:29:46.511] [info] Updating Model file from 30000 to latest format...
+[2023-02-22 16:29:46.525] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-22 16:29:46.526] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-22 16:29:46.526] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-24 19:00:12.164] [info] Updating Model file from 30000 to latest format...
+[2023-02-24 19:00:12.194] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-24 19:00:12.196] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-24 19:00:12.196] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-24 19:00:12.556] [info] Updating Model file from 30000 to latest format...
+[2023-02-24 19:00:12.570] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-24 19:00:12.571] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-24 19:00:12.571] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:04:14.446] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:04:14.463] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:04:14.465] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:04:14.465] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:04:14.836] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:04:14.849] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:04:14.850] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:04:14.850] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:05:46.859] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:05:46.873] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:05:46.874] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:05:46.874] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:05:47.167] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:05:47.180] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:05:47.181] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:05:47.181] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:06:33.486] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:06:33.500] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:06:33.501] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:06:33.502] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:06:33.798] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:06:33.812] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:06:33.813] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:06:33.813] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:08:43.025] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:08:43.039] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:08:43.040] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:08:43.040] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:08:43.350] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:08:43.364] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:08:43.365] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:08:43.365] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:09:35.048] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:09:35.062] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:09:35.063] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:09:35.063] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:09:35.391] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:09:35.405] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:09:35.406] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:09:35.406] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:11:28.986] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:11:29.000] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:11:29.001] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:11:29.001] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:11:29.315] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:11:29.328] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:11:29.329] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:11:29.329] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:12:42.439] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:12:42.453] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:12:42.454] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:12:42.454] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:12:42.762] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:12:42.775] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:12:42.776] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:12:42.776] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:15:44.722] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:15:44.736] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:15:44.737] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:15:44.737] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:15:45.073] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:15:45.086] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:15:45.087] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:15:45.087] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:17:36.599] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:17:36.613] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:17:36.614] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:17:36.614] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:17:36.907] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:17:36.920] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:17:36.921] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:17:36.921] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:32:10.501] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:32:10.515] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:32:10.517] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:32:10.517] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-02-26 10:32:10.847] [info] Updating Model file from 30000 to latest format...
+[2023-02-26 10:32:10.861] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-02-26 10:32:10.862] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-02-26 10:32:10.862] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-03-17 11:55:00.998] [info] Updating Model file from 30000 to latest format...
+[2023-03-17 11:55:01.013] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit0/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-03-17 11:55:01.015] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-03-17 11:55:01.015] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-03-17 11:56:46.440] [info] Updating Model file from 30000 to latest format...
+[2023-03-17 11:56:46.453] [info] Loaded model gait14dof22musc_planar from file /Users/lia/Desktop/osim/commit0/cespar_initMilestone/control/../models/gait14dof22musc_withexo_full.osim
+[2023-03-17 11:56:46.454] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-03-17 11:56:46.455] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-03-17 09:01:42.218] [info] Updating Model file from 30000 to latest format...
+[2023-03-17 09:01:42.363] [info] Loaded model gait14dof22musc_planar from file /root/.local/nrp/test/control/../models/gait14dof22musc_withexo_full.osim
+[2023-03-17 09:01:42.546] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-03-17 09:01:42.547] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-03-17 09:02:03.805] [info] Updating Model file from 30000 to latest format...
+[2023-03-17 09:02:03.933] [info] Loaded model gait14dof22musc_planar from file /root/.local/nrp/test/control/../models/gait14dof22musc_withexo_full.osim
+[2023-03-17 09:02:03.934] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-03-17 09:02:03.935] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-03-20 12:54:02.549] [info] Updating Model file from 30000 to latest format...
+[2023-03-20 12:54:02.699] [info] Loaded model gait14dof22musc_planar from file /root/.local/nrp/test/control/../models/gait14dof22musc_withexo_full.osim
+[2023-03-20 12:54:02.704] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-03-20 12:54:02.705] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-03-20 12:54:52.558] [info] Updating Model file from 30000 to latest format...
+[2023-03-20 12:54:52.686] [info] Loaded model gait14dof22musc_planar from file /root/.local/nrp/test/control/../models/gait14dof22musc_withexo_full.osim
+[2023-03-20 12:54:52.687] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-03-20 12:54:52.688] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.

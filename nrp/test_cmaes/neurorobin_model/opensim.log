@@ -1,0 +1,129 @@
+[2023-04-17 09:17:44.054] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:17:44.089] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:17:44.092] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:17:44.093] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:17:44.448] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:17:44.478] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:17:44.480] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:17:44.480] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:17:45.064] [opensim] [error] Traceback (most recent call last):
+  File "opensim_manager.py", line 29, in initialize
+    optimisation = pickle.load(f)
+ModuleNotFoundError: No module named 'deap'
+
+[2023-04-17 09:18:38.422] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:18:38.455] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:18:38.457] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:18:38.458] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:18:38.711] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:18:38.741] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:18:38.742] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:18:38.743] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:25:35.458] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:25:35.492] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:25:35.493] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:25:35.494] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:25:35.752] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:25:35.785] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:25:35.786] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:25:35.787] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:25:39.839] [opensim] [critical] Error while executing loop step: Traceback (most recent call last):
+  File "opensim_manager.py", line 84, in runLoop
+    reward = self.sim_manager.run_step(action, timestep)
+  File "/root/.local/nrp/lib/python3.8/site-packages/nrp_core/engines/opensim/SimManager.py", line 57, in run_step
+    return self.sim_interface.run_one_step(action, timestep_ns)
+  File "/root/.local/nrp/lib/python3.8/site-packages/nrp_core/engines/opensim/OpensimLib.py", line 54, in run_one_step
+    self.obs_dict, reward, done, info = self.env.step(action, project = True, obs_as_dict=True)
+  File "/root/.local/nrp/lib/python3.8/site-packages/nrp_core/engines/opensim/envs/osim_envs.py", line 281, in step
+    _, reward, done, info = super(L2M2019Env, self).step(action_mapped, project=project, obs_as_dict=obs_as_dict)
+  File "/root/.local/nrp/lib/python3.8/site-packages/nrp_core/engines/opensim/envs/osim_envs.py", line 62, in step
+    self.osim_model.integrate()
+  File "/root/.local/nrp/lib/python3.8/site-packages/nrp_core/engines/opensim/envs/osim_model.py", line 265, in integrate
+    self.state = self.manager.integrate(self.stepsize * self.istep)
+  File "/Opensim/OpenSim/lib/python3.8/site-packages/opensim/simulation.py", line 18729, in integrate
+    return _simulation.Manager_integrate(self, finalTime)
+RuntimeError: std::exception in 'SimTK::State const & OpenSim::Manager::integrate(double)': SimTK Exception thrown at VisualizerProtocol.cpp:456:
+  Error detected by Simbody method VisualizerProtocol: An attempt to write() 1 bytes to pipe 18 failed with errno=32 (Broken pipe).
+  (Required condition 'status!=-1' was not met.)
+
+
+[2023-04-17 09:25:56.528] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:25:56.559] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:25:56.561] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:25:56.562] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:25:56.820] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:25:56.849] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:25:56.851] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:25:56.851] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:45:50.659] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:45:50.691] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:45:50.693] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:45:50.694] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:45:50.958] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:45:50.988] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:45:50.989] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:45:50.990] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:53:14.226] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:53:14.260] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:53:14.262] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:53:14.263] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:53:14.517] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:53:14.548] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:53:14.549] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:53:14.550] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:55:25.740] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:55:25.771] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:55:25.772] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:55:25.773] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 09:55:26.027] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 09:55:26.056] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 09:55:26.058] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 09:55:26.059] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:00:07.914] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:00:07.946] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:00:07.948] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:00:07.950] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:00:08.201] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:00:08.230] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:00:08.232] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:00:08.233] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:19:16.652] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:19:16.684] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:19:16.685] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:19:16.686] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:19:16.947] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:19:16.977] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:19:16.978] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:19:16.979] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:24:56.258] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:24:56.289] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:24:56.291] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:24:56.291] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:24:56.545] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:24:56.574] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:24:56.575] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:24:56.576] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:27:35.140] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:27:35.173] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:27:35.175] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:27:35.176] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:27:35.439] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:27:35.468] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:27:35.469] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:27:35.470] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:37:28.154] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:37:28.185] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:37:28.187] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:37:28.188] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:37:28.443] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:37:28.472] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:37:28.473] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:37:28.474] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:47:12.677] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:47:12.708] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:47:12.709] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:47:12.710] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2023-04-17 10:47:12.966] [opensim] [info] Updating Model file from 30000 to latest format...
+[2023-04-17 10:47:12.995] [opensim] [info] Loaded model gait14dof22musc_planar from file neurorobin_model/gait14dof22musc_withexo_full.osim
+[2023-04-17 10:47:12.997] [opensim] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2023-04-17 10:47:12.997] [opensim] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.

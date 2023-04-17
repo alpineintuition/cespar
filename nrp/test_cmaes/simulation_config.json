@@ -1,0 +1,17 @@
+{
+	"SimulationName": "tf_exchange",
+	"SimulationDescription": "Launch two python engines. Engine1 will offer the current time as a datapack. tf_1 will request said datapack and send it to Engine2. Engine2 will receive the time and display it",
+	"SimulationTimeout": 11,
+	"EngineConfigs":
+	[
+		{
+			"EngineType": "opensim",
+			"EngineName": "opensim",
+			"EngineTimestep": 0.01,
+			"SimulationDuration": 10,
+			"PythonFileName": "opensim_manager.py",
+			"WorldFileName":"neurorobin_model/gait14dof22musc_withexo_full.osim",
+			"Visualizer":true
+		}
+	]
+}

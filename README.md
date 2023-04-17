@@ -19,6 +19,7 @@ robotic assistive device environments in order to study simulated neurorohabilit
 5. [Explanation of Opensim Integration](../main/md_files/opensim.md)
 6. [Model Generator](../main/md_files/model_generator.md)
 7. [Scaler](../main/md_files/scaler.md)
+8. [NRP Integration](../main/md_files/nrp.md)
 
 ### General Information
 
