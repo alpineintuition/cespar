@@ -49,7 +49,7 @@ study neurorehabilitation of patients with lower limb motor control disorders.
 
 ### License
 
-CESPAR is licensed under the [GNU General Public License v3.0](LICENSE).
+CESPAR is licensed under the [Apache-2.0 license](LICENSE).
 
 ### Acknowledgements
 
