@@ -15,24 +15,21 @@ __version__ = "1.0.0"
 __email__ = "berat.denizdurduran@alpineintuition.ch"
 __status__ = "Stable"
 
-from re import M
-from tkinter import *
-import numpy as np
+import os
+import sys
 import math
+import shutil
+import numpy as np
+from tkinter import *
 #root contains everything in the GUI
 window = Tk()
 #names windows
 window.title('Model Generator')
-from control.osim_HBP_withexo_CMAES import L2M2019Env
-import os
-import shutil
+from sympy.abc import x, y, z
 import xml.etree.ElementTree as ET
-import csv
 from sympy import solve_poly_system
-from sympy.abc import x, y, z, d, h, w, r
-import io
-from contextlib import redirect_stdout, redirect_stderr
-import sys
+from control.osim_HBP_withexo_CMAES import L2M2019Env
+
 
 #row and columns indexes
 n = 0
@@ -196,7 +193,7 @@ def scale_physical_properties(root, dict_parts):
                     scale_factors = [new_size/old_size for new_size, old_size in zip(scale_factors, pos_sol)]
                     mass_scaled_factor = np.prod(scale_factors)
                     new_mass = old_mass * mass_scaled_factor
-                    body_part.find('mass').text = str(new_mass)
+                    body_part.find('mass').text = str(new_mass) 
 
                 else:
                     new_sizes = [a*b for a, b in zip(pos_sol, scale_factors)]
@@ -228,18 +225,18 @@ def scale_physical_properties(root, dict_parts):
                 else: length = math.sqrt(square_length)
 
                 pos_sol[rad_axis] = radius
-                pos_sol[rad_axis2] = radius
-                pos_sol[len_axis] = length
+                pos_sol[rad_axis2] = radius                
+                pos_sol[len_axis] = length  
 
                 if var_method.get() == "Size (cm)":
                     new_sizes = scale_factors
                     scale_factors = [new_size/old_size for new_size, old_size in zip(scale_factors, pos_sol)]
                     mass_scaled_factor = np.prod(scale_factors)
                     new_mass = old_mass * mass_scaled_factor
-                    body_part.find('mass').text = str(new_mass)
-
+                    body_part.find('mass').text = str(new_mass) 
+                
                 else:
-                    new_sizes = [a*b for a, b in zip(pos_sol, scale_factors)]
+                    new_sizes = [a*b for a, b in zip(pos_sol, scale_factors)]                
 
                 length *= scale_factors[len_axis]
 
@@ -430,7 +427,7 @@ def create_scaling_dicts(parts):
                         4 : 'Feet'}
 
     dict_parts = {}
-
+    
     for i, part in enumerate(parts):
         scale_elements = [True if scale_element.get() and float(scale_element.get())!=1 else False for scale_element in part]
 
@@ -458,7 +455,7 @@ def create_scaling_dicts(parts):
                     dict_parts[part] = scale_factors
 
                 dict_parts["Efoot_r"] = exo_scale_factors
-                dict_parts["Efoot_l"] = exo_scale_factors
+                dict_parts["Efoot_l"] = exo_scale_factors             
 
             elif temp_dict_parts[i] == 'Pelvis':
                 dict_parts["pelvis"] = scale_factors
@@ -479,9 +476,9 @@ def create_scaling_dicts(parts):
 def change_offset( interval, nb_step, step, orig_min_inter, orig_max_inter,  dict_parts, best_offset, best_assembly_error, change_scale):
 
     if len(interval) > nb_step:
-
+        
         interval = interval[:nb_step]
-
+        
     elif len(interval) == 0:
         print(f"Best Assembly Error : {best_assembly_error} for Ehip Offset : {best_offset}")
         best_offset_ehip = best_offset
@@ -505,13 +502,13 @@ def change_offset( interval, nb_step, step, orig_min_inter, orig_max_inter,  dic
         assembly_errors = np.zeros(nb_step)
         print("Changing Interval")
 
-    return interval, step, dict_parts, offset_ehip,
-
+    return interval, step, dict_parts, offset_ehip, 
+        
 
 """Change the interval of scaling factors of the exo hips to find the exo hips dimensions that fit the constraints"""
 def change_interval(i, interval, assembly_errors, nb_step, step):
 
-    if i == len(interval):
+    if i == len(interval):            
         i = 0
         min_index = np.argmin(assembly_errors)
         new_step = 2*step/(nb_step)
@@ -554,12 +551,12 @@ def click_render():
     i = 0
     j = 0
     assembly_errors = np.zeros(nb_step)
-    offset_ehip = 0
+    offset_ehip = 0 
     ehip = True
 
     dict_parts = create_scaling_dicts(parts)
     #new_filename_entry.get()
-    new_filepath = f'./models/gait14dof22musc_withexo_new.osim'
+    new_filepath = f'./models/gait14dof22musc_withexo_full_new.osim'
     factor_to_change = None
 
     original_pelvis_factors = None
@@ -573,11 +570,10 @@ def click_render():
         factor_to_change = [1 if i == indices[num_of_index] else 0 for i in range(len(dict_parts["pelvis"]))]
         first_time = True
         #num_of_index += 1
-
+                
     while assembly_error > 1e-10 and j < 1000000:
         # Makes copy of .osim model and change it to a .xml file
-
-        shutil.copyfile('./models/gait14dof22musc_withexo.osim', new_filepath)
+        shutil.copyfile('./models/gait14dof22musc_withexo_full.osim', new_filepath)
         pre, ext = os.path.splitext(new_filepath)
         temp_xml = pre + '.xml'
         os.rename(new_filepath, temp_xml)
@@ -596,9 +592,9 @@ def click_render():
 
         if j == 0:
             orig_root = tree.getroot()
-
+        
         if ehip:
-            offset_ehip = interval[i]
+            offset_ehip = interval[i]            
         #dict_parts = create_scaling_dicts(parts)
         if factor_to_change:
             if first_time:
@@ -609,7 +605,7 @@ def click_render():
 
         scale_constraints_markers(root, dict_parts, offset_ehip, factor_to_change)
         #print(dict_parts, "after scale_constraints_markers")
-        scale_physical_properties(root, dict_parts)
+        scale_physical_properties(root, dict_parts)       
         scale_joints(root, dict_parts)
         scale_muscles(root, dict_parts)
         scale_contact_surfaces(root, dict_parts)
@@ -632,7 +628,7 @@ def click_render():
         pre, ext = os.path.splitext(temp_xml)
         os.rename(temp_xml, pre + '.osim')
 
-        #Takes what's printed in terminal and make a list of strings
+        #Takes what's printed in terminal and make a list of strings 
         output_string = ""
         stream = sys.stdout
         original_stdout = sys.stdout.fileno()
@@ -669,7 +665,7 @@ def click_render():
                 break
 
             #if pelvis is scaled and assembly error achieved
-            else:
+            else:                         
                 #if all pelvis scaling factors have been applied
                 if num_of_index == len(indices)-1:
                     print("Assembly Tolerance Achieved indices reached!")
@@ -710,9 +706,9 @@ def click_render():
         if i == len(interval):
             i, interval, step = change_interval(i, interval, assembly_errors, nb_step, step)
 
-            if len(interval) > nb_step:
+            if len(interval) > nb_step:             
                 interval = interval[:nb_step]
-
+                
             elif len(interval) == 0:
                 print(f"Best Assembly Error : {best_assembly_error} for Ehip Offset : {best_offset}")
                 best_offset_ehip = best_offset
@@ -736,7 +732,8 @@ def click_render():
     print(f"Best Assembly Error : {best_assembly_error}")
     os.rename(new_filepath, f"./models/{new_filename_entry.get()}.osim")
     window.destroy()
-
+    
+    
 myButton = Button(window, text="Create Model", padx=25, command=click_render)
 myButton.grid(row=n+11, column=2)
 

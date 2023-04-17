@@ -18,6 +18,7 @@ robotic assistive device environments in order to study simulated neurorohabilit
 4. [Neuromechanical models of Human Locomotion](../main/md_files/neuromechanics.md)
 5. [Explanation of Opensim Integration](../main/md_files/opensim.md)
 6. [Model Generator](../main/md_files/model_generator.md)
+7. [Scaler](../main/md_files/scaler.md)
 
 ### General Information
 
