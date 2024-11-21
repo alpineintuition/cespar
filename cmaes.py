@@ -47,7 +47,7 @@ from rich.progress import Progress
 
 from checkpoint import Checkpoint
 from constants import FB_PAR_SPACE_3D
-from control.osim_hbp_cmaes import L2M2019Env
+from control.osim_hbp_cmaes import L2M2019Env, OsimModel
 from control.osim_loco_reflex_song2019 import OsimReflexCtrl
 from utils import get_args, setup_logging
 
@@ -232,6 +232,22 @@ def main():
     log.info(f"{prefix} Sent termination signals to all workers.")
 
     log.info(f"{prefix} results and checkpoints available at '{ckpt.path}'")
+
+    # Save model elements for future ml trainings
+
+    model = OsimModel(args.model_path, args.exoskeleton, False)
+
+    elements = model.get_elements()
+    elements["best_individual"] = ckpt.best_individual
+
+    path = Path("./results/cmaes/training.csv")
+    with open(path, mode="a", newline="") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=elements.keys())
+        if path.is_file():
+            writer.writeheader()
+        writer.writerow(elements)
+
+    log.info(f"{prefix} training csv ('{path}') updated")
 
 
 def worker():

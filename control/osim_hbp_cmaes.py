@@ -116,6 +116,49 @@ class OsimModel(object):
         for i in range(self.markerSet.getSize()):
             print(i, self.markerSet.get(i).getName())
 
+    def get_elements(self):
+        elements = {}
+
+        for i in range(self.bodySet.getSize()):
+            body_set = self.bodySet.get(i)
+            name = body_set.getName()
+
+            mass = body_set.getMass()
+            elements[f"body_{name}_mass"] = mass
+
+            mass_center = body_set.getMassCenter()
+            elements[f"body_{name}_mass_center"] = [
+                mass_center.get(0),
+                mass_center.get(1),
+                mass_center.get(2),
+            ]
+
+            frame_geometry = body_set.getComponent("frame_geometry")
+            elements[f"{name}_scale_factor"] = [
+                frame_geometry.get_scale_factors().get(0),
+                frame_geometry.get_scale_factors().get(1),
+                frame_geometry.get_scale_factors().get(2),
+            ]
+
+        # joints = {}
+        # for i in range(self.jointSet.getSize()):
+        #     name = self.jointSet.get(i).getName()
+        #     joints[name] = {}
+        #
+        # muscles = {}
+        # for i in range(self.muscleSet.getSize()):
+        #     print(i, self.muscleSet.get(i).getName())
+        #
+        # force_set = {}
+        # for i in range(self.forceSet.getSize()):
+        #     print(i, self.forceSet.get(i).getName())
+        #
+        # markers = {}
+        # for i in range(self.markerSet.getSize()):
+        #     print(i, self.markerSet.get(i).getName())
+
+        return elements
+
     def actuate(self, action):
         if np.any(np.isnan(action)):
             raise ValueError(
