@@ -29,7 +29,7 @@ def get_args() -> argparse.Namespace:
         "-ng",
         "--num-generations",
         help="[OPT] Number of generation",
-        default=150,
+        default=300,
         type=int,
     )
     parser.add_argument(
