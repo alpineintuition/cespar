@@ -47,6 +47,21 @@ study neurorehabilitation of patients with lower limb motor control disorders.
 
 ![Alt Text](../main/md_files/output.gif)
 
+### Prerequisites
+
+- conda 
+
+### Setup
+
+```bash
+bash setup.sh
+```
+
+### Usage
+
+```bash
+mpirun -np 3 python cmaes.py --model-path models/gait14of22musc/gait14dof22musc.osim
+```
 
 ### License
 
