@@ -1,5 +1,7 @@
 deap==1.4.1
 gym==0.26.2
 numpy==1.21.6
+ipdb==0.13.13
+requests==2.31.0
 rich==13.8.1
 scikit-learn==0.24.2
