@@ -1,4 +1,5 @@
 import argparse
+import base64
 import logging
 import os
 from contextlib import contextmanager
@@ -188,3 +189,11 @@ def no_stdout():
         os.dup2(old_stdout, 1)
         os.close(old_stdout)
         os.close(devnull)
+
+
+def encode(data: bytes) -> str:
+    return base64.b64encode(data).decode("utf-8")
+
+
+def decode(encoded_data: str) -> bytes:
+    return base64.b64decode(encoded_data)
