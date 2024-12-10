@@ -249,12 +249,12 @@ def main():
     model = Model(ckpt.model_path, ckpt.exoskeleton, ckpt.initial_speed, False)
 
     elements = model.get_elements()
-    elements["best_individual"] = ckpt.best_individual
+    elements["best_individual"] = ckpt.best_individual.tolist()
 
     path = Path("./results/cmaes/training.csv")
     with open(path, mode="a", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=elements.keys())
-        if path.is_file():
+        if not path.is_file():
             writer.writeheader()
         writer.writerow(elements)
 
