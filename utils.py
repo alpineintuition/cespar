@@ -186,4 +186,5 @@ def no_stdout():
         yield
     finally:
         os.dup2(old_stdout, 1)
+        os.close(old_stdout)
         os.close(devnull)
