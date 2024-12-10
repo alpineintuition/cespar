@@ -142,6 +142,12 @@ def get_args() -> argparse.Namespace:
         help="Enable debug mode",
         action="store_true",
     )
+    parser.add_argument(
+        "--output-dir",
+        help="",
+        type=str,
+        default=None,
+    )
 
     return parser.parse_args()
 

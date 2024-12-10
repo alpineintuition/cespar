@@ -104,11 +104,13 @@ class Checkpoint:
             # TODO: clear logbook if restarted from a previous checkpoint
             if args.force_sigma:
                 ckpt.sigma = args.sigma
-
         else:
-            now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-            path = Path(f"./results/cmaes/{now}_{Path(args.model_path).stem}")
-            path.mkdir(parents=True, exist_ok=True)
+            if args.output_dir is None:
+                now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+                path = Path(f"./results/cmaes/{now}_{Path(args.model_path).stem}")
+                path.mkdir(parents=True, exist_ok=True)
+            else:
+                path = Path(args.output_dir)
 
             ckpt = Checkpoint(
                 best_generation=0,
