@@ -141,6 +141,8 @@ def main():
     # start compute
     #
 
+    best_generation = 0
+
     time.sleep(1)  # so all workers are ready
 
     with Progress(console=console, disable=args.debug) as progress:
@@ -219,12 +221,20 @@ def main():
                     + f"fitness={fitness:.4f}, distance={distance:.4f}"
                 )
 
+                best_generation = generation
                 ckpt.best_fitness = fitness
                 ckpt.best_distance = distance
                 ckpt.best_individual = individual
                 ckpt.sigma = strategy.sigma
 
                 ckpt.save()
+
+            if best_generation + generation > args.early_stop:
+                log.info(
+                    f"{sub_prefix} early stop! No new best individual for more "
+                    + f"than {args.early_stop} genereations"
+                )
+                break
 
     # Send termination signal
 

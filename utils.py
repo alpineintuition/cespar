@@ -149,6 +149,12 @@ def get_args() -> argparse.Namespace:
         type=str,
         default=None,
     )
+    parser.add_argument(
+        "--early-stop",
+        help="",
+        type=int,
+        default=200,
+    )
 
     return parser.parse_args()
 
