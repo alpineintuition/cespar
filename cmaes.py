@@ -47,9 +47,10 @@ from rich.progress import Progress
 
 from checkpoint import Checkpoint
 from constants import FB_PAR_SPACE_3D
-from control.osim_hbp_cmaes import L2M2019Env, OsimModel
 from control.osim_loco_reflex_song2019 import OsimReflexCtrl
 from utils import get_args, setup_logging
+from environment import Environment
+from model import Model
 
 #
 # setup parallel processes details
@@ -235,7 +236,7 @@ def main():
 
     # Save model elements for future ml trainings
 
-    model = OsimModel(args.model_path, args.exoskeleton, False)
+    model = Model(ckpt.model_path, ckpt.exoskeleton, ckpt.initial_speed, False)
 
     elements = model.get_elements()
     elements["best_individual"] = ckpt.best_individual
@@ -261,46 +262,20 @@ def worker():
     if RANK != VISUALIZER_PROCESS_RANK and not args.test:
         visualize = False
 
-    env = L2M2019Env(
-        model_path=ckpt.model_path,
-        exoskeleton=ckpt.exoskeleton,
+    model = Model(
+        ckpt.model_path,
+        ckpt.exoskeleton,
+        ckpt.initial_speed,
         visualize=visualize,
         integrator_accuracy=ckpt.simulation_integrator_accuracy,
-        seed=ckpt.seed,
-        difficulty=ckpt.difficulty,
-        desired_speed=args.target_speed,
     )
 
-    # Change model parameters. With 2D model, one dimension is fixed, i.e. the
-    # model cannot fall to the left or right.
-    env.change_model(model="2D", difficulty=ckpt.difficulty, seed=ckpt.seed)
-
-    timestep_limit = int(round(ckpt.simulation_duration / ckpt.simulation_dt))
-    env.spec.timestep_limit = timestep_limit  # type: ignore
-
-    #
-    # setup initial model position
-    #
-
-    coords = env.osim_model.model.updCoordinateSet()
-    pelvis_height = coords.get("pelvis_ty").get_default_value()
-    # pelvis_height = 9.023245653983965608e-01
-
-    init_pose = np.array(
-        [
-            ckpt.initial_speed,  # forward speed
-            0.5,  # rightward speed
-            pelvis_height,
-            2.012303881285582852e-01,  # trunk lean
-            0 * np.pi / 180,  # [right] hip adduct
-            -6.952390849304798115e-01,  # hip flex
-            -3.231075259785813891e-01,  # knee extend
-            1.709011708233401095e-01,  # ankle flex
-            0 * np.pi / 180,  # [left] hip adduct
-            -5.282323914341899296e-02,  # hip flex
-            -8.041966456860847323e-01,  # knee extend
-            -1.745329251994329478e-01,  # ankle flex
-        ]
+    env = Environment(
+        model=model,
+        desired_speed=ckpt.target_speed,
+        timestep_limit=int(round(ckpt.simulation_duration / ckpt.simulation_dt)),
+        difficulty=ckpt.difficulty,
+        seed=ckpt.seed,
     )
 
     #
@@ -321,57 +296,45 @@ def worker():
         individual = scale_feedback(np.array(individual))
 
         FBCtrl = OsimReflexCtrl(mode="2D", dt=ckpt.simulation_dt)
-
         control_params = np.round(individual[0 : len(ckpt.best_individual)], 4)
         FBCtrl.set_control_params(control_params)
 
-        obs_dict = env.reset(
-            project=True,
-            seed=ckpt.seed,
-            obs_as_dict=True,
-            init_pose=init_pose,
-        )
-
-        obs = env.get_observation()
-        total_obs_sum = sum(obs)
-        speeds = [obs[245]]
+        env.init()
 
         done = False
+        distance = 0
         num_iterations = 0
         total_reward = 0
         start = time.time()
+        speeds = []
+        joint_position_log = []
+        joint_velocity_log = []
+        muscle_activation_log = []
 
-        joint_position_log, joint_velocity_log, muscle_activation_log = [], [], []
-        joint_position_log.append(env.get_observation_list_joints_pos())
-        joint_velocity_log.append(env.get_observation_list_joints_vel())
+        observation = env.get_observation()
+
+        joint_position_log.append(observation["joint_positions"])
+        joint_velocity_log.append(observation["joint_velocities"])
 
         while not done:
-            actions = np.array(FBCtrl.update(obs_dict))
+            actions = np.array(FBCtrl.update(observation))
             if ckpt.exoskeleton:
                 # Added exoskeleton: At this state, the exoskeleton is only an added weight of 10kg.
                 # In this case, the exoskeleton is partially added (only the hips' actuators).
                 exo_actuation = np.zeros(6)
                 actions = np.concatenate((actions, exo_actuation))
 
-            obs_dict, reward, done, _ = env.step(
-                actions,
-                project=True,
-                obs_as_dict=True,
-            )
+            observation, reward, speed, pose, done = env.step(actions)
 
             total_reward += reward
+            distance = pose[0]
+            speeds.append(speed)
 
-            obs = env.get_observation()
-            total_obs_sum += sum(obs)
-            speeds.append(obs[245])
-
-            joint_position_log.append(env.get_observation_list_joints_pos())
-            joint_velocity_log.append(env.get_observation_list_joints_vel())
+            joint_position_log.append(observation["joint_positions"])
+            joint_velocity_log.append(observation["joint_velocities"])
             muscle_activation_log.append(actions)
 
             num_iterations += 1
-
-        distance = env.pose[0]
 
         simulation_duration = num_iterations * ckpt.simulation_dt
         real_duration = time.time() - start
@@ -383,7 +346,7 @@ def worker():
             + f"num_iterations={num_iterations}, "
             + f"simulation_duration={simulation_duration:.4f} sec, "
             + f"real_duration={real_duration:.4f} sec, "
-            + f"total_obs_sum={total_obs_sum:.4f}, "
+            # + f"total_obs_sum={total_obs_sum:.4f}, "
             + f"speed={speeds[-1]:.4f} m/s, "
             + f"mean_speed={np.mean(speeds):.4f} m/s"
         )
@@ -393,8 +356,8 @@ def worker():
             logs_dir.mkdir(exist_ok=True, parents=True)
 
             to_save = [
-                (joint_position_log, "joint_position"),
-                (joint_velocity_log, "joint_velocity"),
+                (joint_position_log, "joint_positions"),
+                (joint_velocity_log, "joint_velocities"),
                 (muscle_activation_log, "muscle_activation"),
             ]
 
