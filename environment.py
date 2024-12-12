@@ -177,25 +177,31 @@ class Environment:
 
         # joints positions
 
-        observation["joint_positions"] = [
-            # hip
-            [-joint_positions["hip_r"][0], -joint_positions["hip_l"][0]],
-            # knee
-            [joint_positions["knee_r"][0], joint_positions["knee_l"][0]],
-            # ankle
-            [-joint_positions["ankle_r"][0], -joint_positions["ankle_l"][0]],
-        ]
+        observation["joint_positions"] = {
+            "hip_r": -joint_positions["hip_r"][0],
+            "hip_l": -joint_positions["hip_l"][0],
+            "knee_r": joint_positions["knee_r"][0],
+            "knee_l": joint_positions["knee_l"][0],
+            "ankle_r": -joint_positions["ankle_r"][0],
+            "ankle_l": -joint_positions["ankle_l"][0],
+        }
 
         # joints velocities
 
-        observation["joint_velocities"] = [
-            # hip
-            [-joint_velocities["hip_r"][0], -joint_velocities["hip_l"][0]],
-            # knee
-            [joint_velocities["knee_r"][0], joint_velocities["knee_l"][0]],
-            # ankle
-            [-joint_velocities["ankle_r"][0], -joint_velocities["ankle_l"][0]],
-        ]
+        observation["joint_velocities"] = {
+            "hip": {
+                "r": -joint_velocities["hip_r"][0],
+                "l": -joint_velocities["hip_l"][0],
+            },
+            "knee": {
+                "r": joint_velocities["knee_r"][0],
+                "l": joint_velocities["knee_l"][0],
+            },
+            "ankle": {
+                "r": -joint_velocities["ankle_r"][0],
+                "l": -joint_velocities["ankle_l"][0],
+            },
+        }
 
         # pelvis state (in local frame)
 

@@ -8,6 +8,7 @@ from typing import Union
 
 import numpy as np
 from deap.tools import HallOfFame, Logbook
+from rich.console import Console
 
 log = logging.getLogger("cmaes")
 
@@ -125,22 +126,40 @@ class Checkpoint:
 
         return ckpt
 
-    def print(self):
+    def print(
+        self,
+        best_individual: bool = False,
+        console: Union[Console, None] = None,
+    ):
         to_print = []
+
+        ignore_keys = [
+            "_stats",
+            "_stats_duration",
+            "logbook",
+            "hall_of_fame",
+            "first_run",
+            "start_gen",
+            "log_frequency",
+            "logbook_path",
+        ]
+
+        if not best_individual:
+            ignore_keys.append("best_individual")
+
         for k, v in self.__dict__.items():
-            if k in [
-                "_stats",
-                "_stats_duration",
-                "logbook",
-                "hall_of_fame",
-                "best_individual",
-            ]:
+            if k in ignore_keys:
                 continue
             k = k.upper()
             if "PATH" in k:
                 v = f"'{v}'"
             to_print.append(f"{k} : {v}")
-        log.info("\n".join(to_print))
+        to_print = "\n".join(to_print)
+
+        if console is not None:
+            console.print(to_print)
+        else:
+            log.info(to_print)
 
     def log(self, generation, offsprings, sigma, fitness, distance, **stats):
         assert self.logbook_path is not None
