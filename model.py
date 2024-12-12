@@ -120,9 +120,6 @@ class Model(object):
         self._init_muscles()
         self._init_manager()
 
-        # self.model.realizeAcceleration(self.state)
-        # print("NEW_realize_acceleration")
-
         self.istep = 0
 
         self.action_to_muscle = ACTION_TO_MUSCLE
