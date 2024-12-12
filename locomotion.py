@@ -8,7 +8,7 @@ The Journal of physiology, 2015.
 from __future__ import division  # '/' always means non-truncating division
 import numpy as np
 from control.locoCtrl_balance_reflex_separated import LocoCtrl
-from typing import List
+from typing import List, Dict
 
 FB_PAR_SPACE_3D = (
     [
@@ -884,7 +884,7 @@ class ReflexLocomotionControl(LocomotionControl):
     def _reflexstim2stim(self):
         return self._stimdict2array(self.stim)
 
-    def update(self, sensor_data: np.ndarray) -> np.ndarray:
+    def update(self, sensor_data: Dict) -> np.ndarray:
         self.t += self.dt
         super().update(self._obs2reflexobs(sensor_data))
         return np.clip(self._reflexstim2stim(), 0.01, 1.0)
