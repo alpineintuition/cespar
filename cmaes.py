@@ -140,14 +140,13 @@ def main():
     # start compute
     #
 
-    best_generation = 0
-
     time.sleep(1)  # so all workers are ready
 
     with Progress(console=console, disable=args.debug) as progress:
         start, end = ckpt.start_gen + 1, args.num_generations + 1
         task = progress.add_task("Computing...", total=end, completed=start)
 
+        generation_without_best = 0
         for generation in range(start, end):
             sub_prefix = f"{prefix} (generation={generation})"
 
@@ -220,7 +219,8 @@ def main():
                     + f"fitness={fitness:.4f}, distance={distance:.4f}"
                 )
 
-                best_generation = generation
+                generation_without_best = 0
+                ckpt.best_generation = generation
                 ckpt.best_fitness = fitness
                 ckpt.best_distance = distance
                 ckpt.best_individual = individual
@@ -228,12 +228,13 @@ def main():
 
                 ckpt.save()
 
-            if best_generation + generation > args.early_stop:
+            if generation_without_best > args.early_stop:
                 log.info(
                     f"{sub_prefix} early stop! No new best individual for more "
                     + f"than {args.early_stop} genereations"
                 )
                 break
+            generation_without_best += 1
 
     # Send termination signal
 
