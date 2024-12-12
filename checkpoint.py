@@ -91,7 +91,7 @@ class Checkpoint:
             self.hall_of_fame = HallOfFame(1)
 
     @staticmethod
-    def from_path(path: str):
+    def from_path(path: Union[str, Path]):
         with open("{}".format(path), "rb") as file:
             ckpt = pickle.load(file)
         return Checkpoint(**ckpt)
