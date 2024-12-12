@@ -45,9 +45,8 @@ from deap import base, cma, creator, tools
 from mpi4py import MPI  # type: ignore
 from rich.progress import Progress
 
+from locomotion import ReflexLocomotionControl
 from checkpoint import Checkpoint
-from constants import FB_PAR_SPACE_3D
-from control.osim_loco_reflex_song2019 import OsimReflexCtrl
 from utils import get_args, setup_logging
 from environment import Environment
 from model import Model
@@ -292,22 +291,12 @@ def worker():
     # compute optimization
     #
 
-    par_space = (
-        FB_PAR_SPACE_3D[0][0 : len(ckpt.best_individual)],
-        FB_PAR_SPACE_3D[1][0 : len(ckpt.best_individual)],
-    )
-
-    def scale_feedback(x):
-        lower = np.array(par_space[0])
-        upper = np.array(par_space[1])
-        return lower + (upper - lower) * (x / 10)
-
     def compute(individual):
-        individual = scale_feedback(np.array(individual))
-
-        FBCtrl = OsimReflexCtrl(mode="2D", dt=ckpt.simulation_dt)
-        control_params = np.round(individual[0 : len(ckpt.best_individual)], 4)
-        FBCtrl.set_control_params(control_params)
+        feedback_control = ReflexLocomotionControl(
+            individual,
+            mode="2D",
+            dt=ckpt.simulation_dt,
+        )
 
         env.init()
 
@@ -327,7 +316,7 @@ def worker():
         joint_velocity_log.append(observation["joint_velocities"])
 
         while not done:
-            actions = np.array(FBCtrl.update(observation))
+            actions = feedback_control.update(observation)
             if ckpt.exoskeleton:
                 # Added exoskeleton: At this state, the exoskeleton is only an added weight of 10kg.
                 # In this case, the exoskeleton is partially added (only the hips' actuators).
